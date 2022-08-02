@@ -11,7 +11,7 @@ A very small script to install MTProtoProxy On Centos or Ubuntu
 * Revoke and add secrets after install
 * Supports Centos 7/8 or Ubuntu 16 or later and Debian 9 and 8
 * Automatically configure NTP
-* API Support [[Reference](https://github.com/HirbodBehnam/MTProtoProxyInstaller/wiki/API-For-Python-Script)]
+* API Support [[Reference](https://github.com/catbug/MTProtoProxyInstaller/wiki/API-For-Python-Script)]
 ## Official Or Python Proxy?
 Use python if:
 1. Your server's CPU has one core or you want to run proxy on one core.
@@ -42,7 +42,7 @@ To manually config, proxy edit config.py in /opt/mtprotoproxy to change the conf
 ##### Quota Limiter
 Python version of the proxy has the ability to limit the users by the traffic they use. You can change the quota by re-running the script after the installation. But remember that if you restart the proxy, all of the usages will reset. (They start counting from 0 again.)
 
-Therefore, if you want user management you can use this [program](https://github.com/HirbodBehnam/PortForwarder)
+Therefore, if you want user management you can use this [program](https://github.com/catbug/PortForwarder)
 ##### Hot Reload:
 Hot reload reloads the config file without restarting the service. It can be useful if you have set some quota limits.
 
@@ -54,7 +54,7 @@ pid=${arrPID[1]}
 kill -USR2 "$pid"
 ```
 ### API
-This script gives you post-install API support to control the proxy. [More Info](https://github.com/HirbodBehnam/MTProtoProxyInstaller/wiki/API-For-Python-Script)
+This script gives you post-install API support to control the proxy. [More Info](https://github.com/catbug/MTProtoProxyInstaller/wiki/API-For-Python-Script)
 ## Official Script
 ### Install
 On your server run
@@ -125,12 +125,12 @@ Fake TLS is a method that makes the proxy traffic look like TLS (something like 
 ### Quota Managment
 I've written a small program in golang([link](https://github.com/HirbodBehnam/PortForwarder)) to forward traffic with quota managment. I've also written a guide [here](https://github.com/HirbodBehnam/MTProtoProxyInstaller/wiki/Quota-Management-For-Server) in order to configure it with MTProto. Right now it also supports the limiting the amount of _connections_ per port. [Persian Guide](http://rizy.ir/limitUsers)
 ### How to install on Windows?
-I've written a small guide to install that on Windows. Please read [wiki](https://github.com/HirbodBehnam/MTProtoProxyInstaller/wiki) for more info.
+I've written a small guide to install that on Windows. Please read [wiki](https://github.com/catbug/MTProtoProxyInstaller/wiki) for more info.
 ### Server
 You can use any VPS or Dedicated Server. If you want a cheap and low-end server, I personally recommend to buy one at [Virmach](https://virmach.com/); They also accept cryptos!
 
 #### Persian guide to buying servers, installing script, FAQ and QoS
-***I DO NOT USE MTPROTO PROXY MYSELF.*** You can also use [shadowsocks with Cloak](https://github.com/HirbodBehnam/Shadowsocks-Cloak-Installer)(**Highly Recommended** and I use it myself) or [wireguard](https://github.com/l-n-s/wireguard-install) or [openvpn](https://github.com/angristan/openvpn-install) instead.
+***I DO NOT USE MTPROTO PROXY MYSELF.*** You can also use [shadowsocks with Cloak](https://github.com/catbug/Shadowsocks-Cloak-Installer)(**Highly Recommended** and I use it myself) or [wireguard](https://github.com/l-n-s/wireguard-install) or [openvpn](https://github.com/angristan/openvpn-install) instead.
 
 (If you are from Iran, you may need to open this link with VPN)
 
